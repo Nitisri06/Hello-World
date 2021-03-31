@@ -1,0 +1,19 @@
+print("------------------CONTACT BOOK-------------------")
+d={}
+while True:
+    n=int(input("1 for saving name,contact number,mail:\n2 for searching contact number and mail using name:\n3 to exit\nEnter the number:"))
+    if n==1:
+        name=input("enter name:")
+        no=int(input("enter contact number:"))
+        mail=(input("enter e-mail id:"))
+        d[name]=no
+        d[no]=mail
+    elif n==2:
+        name1=input("enter name to search in CONTACT BOOK which has already saved")
+        print("CONTACT number of",name1,"is",d[name1],"and e-mail address is",d[no])
+    elif n==3:
+        print("EXIT")
+        break
+
+
+
